@@ -13,6 +13,7 @@ struct ContentView: View {
     var body: some View {
         Slider(value: $estimate, in: 0...50)
             .padding()
+            .accessibility(value: Text("\(Int(estimate))"))
     }
 }
 
